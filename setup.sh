@@ -67,6 +67,7 @@ PACKAGES=(
     "aws-cli-v2"
     "vault"
     "inotify-tools"
+    openrgb
 )
 
 clear
@@ -207,7 +208,7 @@ ln -sf $PWD/Dotfiles/scripts/swww ~/.scripts/swww
 ln -sf $PWD/Dotfiles/scripts/terraform ~/.scripts/terraform
 ln -sf $PWD/Dotfiles/scripts/updater ~/.scripts/updater
 ln -sf $PWD/Dotfiles/scripts/volume ~/.scripts/volume
-ln -sf $PWD/Dotfiles/scripts/waybar ~/.scripts/waybar
+ln -sf $PWD/Dotfiles/scripts/waybar_reload ~/.scripts/waybar_reload
 ln -sf $PWD/Dotfiles/neofetch/config.conf ~/.config/neofetch/config.conf
 ln -sf $PWD/Dotfiles/rtorrent.rc ~/.rtorrent.rc
 ln -sf $PWD/Dotfiles/Thunar/accels.scm ~/.config/Thunar/accels.scm

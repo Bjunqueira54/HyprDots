@@ -1,0 +1,7 @@
+#!/bin/bash
+
+sleep 1
+
+mpvpaper -o "--aid=no --loop=inf --hwdec=auto" -f -p DP-2 ~/Videos/Cyber-City.mp4
+mpvpaper -o "--aid=no --loop=inf --hwdec=auto" -f -p DP-1 ~/Videos/City-Traffic-Rain.mp4
+mpvpaper -o "--aid=no --loop=inf --hwdec=auto" -f -p HDMI-A-1 ~/Videos/Rain-Droplets.mp4
