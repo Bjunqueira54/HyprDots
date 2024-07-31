@@ -66,10 +66,10 @@ PACKAGES=(
     "nano"
     "aws-cli-v2"
     "vault"
+    "inotify-tools"
 )
 
 clear
-
 
 
 #### Check for package manager ####
@@ -202,9 +202,12 @@ ln -sf $PWD/Dotfiles/hypr/hyprland.conf ~/.config/hypr/hyprland.conf
 ln -sf $PWD/Dotfiles/zsh/.zshrc ~/.zshrc
 ln -sf $PWD/Dotfiles/zsh/.p10k.zsh ~/.p10k.zsh
 ln -sf $PWD/Dotfiles/scripts/aliases ~/.scripts/aliases
+ln -sf $PWD/Dotfiles/scripts/mpvpaper ~/.scripts/mpvpaper
 ln -sf $PWD/Dotfiles/scripts/swww ~/.scripts/swww
 ln -sf $PWD/Dotfiles/scripts/terraform ~/.scripts/terraform
 ln -sf $PWD/Dotfiles/scripts/updater ~/.scripts/updater
+ln -sf $PWD/Dotfiles/scripts/volume ~/.scripts/volume
+ln -sf $PWD/Dotfiles/scripts/waybar ~/.scripts/waybar
 ln -sf $PWD/Dotfiles/neofetch/config.conf ~/.config/neofetch/config.conf
 ln -sf $PWD/Dotfiles/rtorrent.rc ~/.rtorrent.rc
 ln -sf $PWD/Dotfiles/Thunar/accels.scm ~/.config/Thunar/accels.scm
@@ -214,7 +217,5 @@ ln -sf $PWD/Dotfiles/wallpapers/desktop-background.png ~/.config/wallpapers/desk
 ln -sf $PWD/Dotfiles/btop/btop.conf ~/.config/btop/btop.conf
 ln -sf $PWD/Themes/btop/tokyo-storm.theme ~/.config/btop/themes/tokyo-storm.theme
 
-
-
 echo -e "$COK - Installation Complete, Rebooting to Hyprland..."
-# sudo reboot 0
+sudo reboot -i

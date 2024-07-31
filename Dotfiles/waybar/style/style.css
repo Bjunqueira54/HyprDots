@@ -12,7 +12,6 @@ window#waybar {
   color: #f4d9e1
 }
 
-
 #custom-launcher {
   color: #e5809e;
   background-color: rgba(29, 29, 44, 1);
@@ -21,14 +20,6 @@ window#waybar {
   padding: 0 20px 0 20px;
   font-size: 30px;
 }
-
-
-#workspaces {
-  background-color: rgba(29, 29, 44, 1);
-  border-radius: 0px 0px 75px 0px;
-  padding: 0 20px 0 20px;
-}
-
 
 #clock {
   color: #C4CAED;
@@ -43,8 +34,6 @@ window#waybar {
   font-size: 16px;
   letter-spacing: 2px;
 }
-
-
 
 #tray {
   color: #C4CAED;
@@ -62,26 +51,9 @@ window#waybar {
   padding-left: 25px;
 }
 
-
-#bluetooth {
+#pipewire {
   color: #C4CAED;
   background-color: rgba(29, 29, 44, 1);
   border-radius: 0px 0px 0px 0px;
   padding-right: 15px;
-  padding-left: 25px;
-}
-
-#pulseaudio {
-  color: #C4CAED;
-  background-color: rgba(29, 29, 44, 1);
-  border-radius: 0px 0px 0px 0px;
-  padding-right: 15px;
-}
-
-
-#custom-hyprpicker {
-  color: #C4CAED;
-  background-color: rgba(29, 29, 44, 1);
-  border-radius: 0px 0px 0px 0px;
-  padding-right: 25px;
 }
