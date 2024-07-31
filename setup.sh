@@ -67,7 +67,8 @@ PACKAGES=(
     "aws-cli-v2"
     "vault"
     "inotify-tools"
-    openrgb
+    "openrgb"
+    "feh"
 )
 
 clear

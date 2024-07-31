@@ -124,3 +124,7 @@ compinit
 alias reloadbash='source ~/.aliases && source ~/.terraform'
 source ~/.scripts/aliases 
 source ~/.scripts/terraform
+
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"

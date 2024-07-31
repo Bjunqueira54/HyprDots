@@ -10,9 +10,10 @@
     "custom/launcher",
     "wlr/taskbar"
   ],
-  //  "modules-center": [
-  //     "spotify"
-  //  ],
+  "modules-center": [
+    "image",
+    "custom/mediaplayer"
+  ],
   "modules-right": [
     "tray",
     "pulseaudio",
@@ -32,6 +33,22 @@
     "tooltip-format": "{title}",
     "ignore-list": [],
     "on-click": "activate"
+  },
+  "image": {
+    "path": "/tmp/waybar-mediaplayer-art",
+    "size": 32,
+    "signal": 4,
+    "on-click": "feh --auto-zoom --borderless --title 'feh-float' /tmp/waybar-mediaplayer-art"
+  },
+  "custom/mediaplayer": {
+    "exec": "$HOME/.config/waybar/waybar-mediaplayer/src/mediaplayer monitor",
+    "return-type": "json",
+    "format": "{}",
+    "on-click": "$HOME/.config/waybar/waybar-mediaplayer/src/mediaplayer play-pause",
+    "on-scroll-up": "$HOME/.config/waybar/waybar-mediaplayer/src/mediaplayer next",
+    "on-scroll-down": "$HOME/.config/waybar/waybar-mediaplayer/src/mediaplayer previous",
+    "min-length": 20,
+    "max-length": 20
   },
   "clock": {
     "format": "  {:%T\n %d/%m/%Y}",
