@@ -10,6 +10,7 @@ CAC="[\e[1;33mACTION\e[0m]"
 
 PACKAGES=(
     "linux-headers"
+    "linux-firmware"
     "git"
     "qt5-wayland"
     "qt5ct"
@@ -30,13 +31,19 @@ PACKAGES=(
     "slurp"
     "thunar"
     "thunar-archive-plugin"
+    #"dolphin"
+    #"dolphin-plugins"
     "polkit-gnome"
     "python-requests"
+
     "pamixer"
     "pavucontrol"
-    "bluez"
-    "bluez-utils"
-    "blueman"
+    #"easyeffects"
+    #"pipewire"
+    #"lib32-pipewire"
+    #"pipewire-jack"
+    #"lib32-pipewire-jack"
+
     "network-manager-applet"
     "networkmanager-openvpn"
     "obs-studio"
@@ -45,27 +52,82 @@ PACKAGES=(
     "file-roller"
     "btop"
     "pacman-contrib"
+
     "ttf-jetbrains-mono-nerd"
+    "ttf-bitstream-vera"
+    "ttf-dejavu"
+    "ttf-opensans"
     "noto-fonts-emoji"
+    "noto-fonts-cjk"
+    "noto-fonts-extra"
+
     "lxappearance"
     "xfce4-settings"
-    "sddm"
+    "sddm-git"
     "tree"
     "qt5-svg"
     "qt5-quickcontrols2"
     "qt5-graphicaleffects"
-    "rtorrent"
+    "qbittorrent"
     "firefox"
+    "chromium"
     "visual-studio-code-bin"
     "neofetch"
-    "bitwarden-cli"
-    "bitwarden"
     "cifs-utils"
     "wget"
     "zsh"
     "nano"
-    "aws-cli-v2"
     "vault"
+    "man-db"
+    "man-pages"
+
+    "grub"
+    "os-prober"
+    "efibootmgr"
+
+    "amd-ucode"
+    "amdgpu_top"
+    "corectrl"
+
+    "ca-certificates"
+    "ca-certificates-mozilla"
+    "ca-certificates-utils"
+
+    "mesa"
+    "lib32-mesa"
+    "vulkan-radeon"
+    "lib32-vulkan-radeon"
+    "xf86-video-amdgpu"
+    "libva-mesa-driver"
+    "lib32-libva-mesa-driver"
+
+    "manga-tui"
+    "wine-staging"
+    "openrgb"
+    "openrazer-driver-dkms"
+    "oversteer"
+    "steam"
+    "vesktop"
+    "mangohud"
+    "goverlay"
+    "gamemode"
+    "lib32-gamemode"
+    "gamescope"
+    "zenpower3-dkms"
+    "path-of-building-community-git"
+    "anydesk-bin"
+    "t150_driver-dkms-git"
+    "unzip"
+    "unrar"
+    "winetricks"
+    "protontricks"
+    "fuse2"
+    "xclicker"
+    "xclicker"
+
+    "waydroid"
+    "python-gbinder"
+    "python-pyclip"
 )
 
 clear
@@ -96,7 +158,7 @@ install() {
     else
         # no package found so installing
         echo -e "$CNT - Now installing $1 ..."
-        yay -S --noconfirm $1 &>> $INSTLOG
+        yay -S --needed --noconfirm $1 &>> $INSTLOG
         # test to make sure package installed
         if yay -Q $1 &>> /dev/null ; then
             echo -e "\e[1A\e[K$COK - $1 was installed."
@@ -217,4 +279,4 @@ ln -sf $PWD/Themes/btop/tokyo-storm.theme ~/.config/btop/themes/tokyo-storm.them
 
 
 echo -e "$COK - Installation Complete, Rebooting to Hyprland..."
-# sudo reboot 0
+sudo reboot 0
