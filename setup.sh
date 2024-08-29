@@ -176,11 +176,6 @@ do
     install $PKG
 done
 
-# Start the bluetooth service
-echo -e "$CNT - Starting the Bluetooth Service..."
-sudo systemctl enable --now bluetooth.service &>> $INSTLOG
-sleep 2
-
 # Start the network manager applet service
 echo -e "$CNT - Starting the Network Manager Service..."
 sudo systemctl enable --now NetworkManager.service
