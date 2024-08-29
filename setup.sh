@@ -260,7 +260,6 @@ ln -sf $PWD/Dotfiles/zsh/.zshrc ~/.zshrc
 ln -sf $PWD/Dotfiles/zsh/.p10k.zsh ~/.p10k.zsh
 ln -sf $PWD/Dotfiles/scripts/aliases ~/.scripts/aliases
 ln -sf $PWD/Dotfiles/scripts/swww ~/.scripts/swww
-ln -sf $PWD/Dotfiles/scripts/terraform ~/.scripts/terraform
 ln -sf $PWD/Dotfiles/scripts/updater ~/.scripts/updater
 ln -sf $PWD/Dotfiles/neofetch/config.conf ~/.config/neofetch/config.conf
 ln -sf $PWD/Dotfiles/rtorrent.rc ~/.rtorrent.rc
