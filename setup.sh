@@ -148,6 +148,7 @@ PACKAGES=(
     "xclicker"
     "mpvpaper"
     "ntfs-3g"
+    "spotify-adblock"
 )
 
 clear
