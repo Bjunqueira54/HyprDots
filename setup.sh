@@ -149,6 +149,7 @@ PACKAGES=(
     "mpvpaper"
     "ntfs-3g"
     "spotify-adblock"
+    "wl-clipboard"
 )
 
 clear
