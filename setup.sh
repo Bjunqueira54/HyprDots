@@ -13,6 +13,7 @@ PACKAGES=(
     "linux-firmware"
     "git"
     "qt5-wayland"
+    "qt6-wayland"
     "qt5ct"
     "kitty"
     "waybar"
