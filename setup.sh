@@ -30,7 +30,7 @@ PACKAGES=(
     "thunar-archive-plugin"
     #"dolphin"
     #"dolphin-plugins"
-    "polkit-gnome"
+    "polkit-kde-agent"
     "python-requests"
 
 # HyprLand
