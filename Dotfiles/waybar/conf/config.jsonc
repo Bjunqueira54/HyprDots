@@ -83,10 +83,5 @@
     "on-scroll-down": "bash ~/.scripts/volume down",
     "scroll-step": 5,
     "on-click-right": "pavucontrol"
-  },
-  "custom/hyprpicker": {
-    "format": "󰈋",
-    "on-click": "hyprpicker -a -f hex",
-    "on-click-right": "hyprpicker -a -f rgb"
   }
 }
