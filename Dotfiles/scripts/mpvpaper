@@ -1,0 +1,7 @@
+#!/bin/bash
+
+sleep 0.5
+
+mpvpaper -o "no-audio --loop-playlist --hwdec=auto" DP-1 ~/HyprDots/Assets/Cyber-City.mp4 &
+mpvpaper -o "no-audio --loop-playlist --hwdec=auto" DP-2 ~/HyprDots/Assets/City-Traffic-Rain.mp4 &
+mpvpaper -o "no-audio --loop-playlist --hwdec=auto" HDMI-A-1 ~/HyprDots/Assets/Rain-Droplets.mp4 &
