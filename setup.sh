@@ -139,6 +139,7 @@ PACKAGES=(
     "fuse2"
     "xclicker"
     "mpvpaper"
+    "ntfs-3g"
 )
 
 clear
@@ -217,7 +218,7 @@ fi
 
 # Install GRUB theme
 echo -e "$CNT - Installing and configuration GRUB Virtuaverse Theme..."
-$PWD/Dotfiles/grub/install_script_grub.sh &>> $INSTLOG
+sudo $PWD/Dotfiles/grub/install_script_grub.sh &>> $INSTLOG
 
 # stage the .desktop file
 sudo cp $PWD/Tools/hyprland.desktop /usr/share/wayland-sessions/
