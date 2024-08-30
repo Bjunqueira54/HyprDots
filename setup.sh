@@ -14,8 +14,6 @@ PACKAGES=(
     "git"
     "qt5-wayland"
     "qt5ct"
-    "libva"
-    "hyprland"
     "kitty"
     "waybar"
     "jq"
@@ -25,7 +23,6 @@ PACKAGES=(
     "swaylock-effects"
     "swayidle"
     "wofi"
-    "xdg-desktop-portal-hyprland"
     "swappy"
     "grim"
     "slurp"
@@ -36,6 +33,12 @@ PACKAGES=(
     "polkit-gnome"
     "python-requests"
 
+# HyprLand
+    "hyprland"
+    "xdg-desktop-portal-hyprland"
+    "hyprswitch"
+
+# Audio
     "pamixer"
     "pavucontrol"
     #"easyeffects"
@@ -44,15 +47,12 @@ PACKAGES=(
     #"pipewire-jack"
     #"lib32-pipewire-jack"
 
+#Networking
     "network-manager-applet"
     "networkmanager-openvpn"
-    "obs-studio"
     "openssh"
-    "gvfs"
-    "file-roller"
-    "btop"
-    "pacman-contrib"
 
+# Fonts
     "ttf-jetbrains-mono-nerd"
     "ttf-bitstream-vera"
     "ttf-dejavu"
@@ -61,6 +61,37 @@ PACKAGES=(
     "noto-fonts-cjk"
     "noto-fonts-extra"
 
+# Boot
+    "grub"
+    "os-prober"
+    "efibootmgr"
+
+# AMD Stuff
+    "amd-ucode"
+    "amdgpu_top"
+    "corectrl"
+
+# Certificates
+    "ca-certificates"
+    "ca-certificates-mozilla"
+    "ca-certificates-utils"
+
+# Graphic Drivers
+    "mesa"
+    "lib32-mesa"
+    "vulkan-radeon"
+    "lib32-vulkan-radeon"
+    "xf86-video-amdgpu"
+    "libva-mesa-driver"
+    "lib32-libva-mesa-driver"
+    "libva"
+
+# Waydroid
+    "waydroid"
+    "python-gbinder"
+    "python-pyclip"
+
+# Misc packages
     "lxappearance"
     "xfce4-settings"
     "sddm-git"
@@ -80,27 +111,11 @@ PACKAGES=(
     "vault"
     "man-db"
     "man-pages"
-
-    "grub"
-    "os-prober"
-    "efibootmgr"
-
-    "amd-ucode"
-    "amdgpu_top"
-    "corectrl"
-
-    "ca-certificates"
-    "ca-certificates-mozilla"
-    "ca-certificates-utils"
-
-    "mesa"
-    "lib32-mesa"
-    "vulkan-radeon"
-    "lib32-vulkan-radeon"
-    "xf86-video-amdgpu"
-    "libva-mesa-driver"
-    "lib32-libva-mesa-driver"
-
+    "gvfs"
+    "file-roller"
+    "btop"
+    "pacman-contrib"
+    "obs-studio"
     "manga-tui"
     "wine-staging"
     "openrgb"
@@ -123,16 +138,9 @@ PACKAGES=(
     "protontricks"
     "fuse2"
     "xclicker"
-    "xclicker"
-
-    "waydroid"
-    "python-gbinder"
-    "python-pyclip"
 )
 
 clear
-
-
 
 #### Check for package manager ####
 echo -e "$CNT - Installing yay..."
@@ -208,11 +216,9 @@ fi
 
 # stage the .desktop file
 sudo cp $PWD/Tools/hyprland.desktop /usr/share/wayland-sessions/
-
 sudo sed -i 's/Exec=Hyprland/Exec=\/home\/'$USER'\/.start-hypr/' /usr/share/wayland-sessions/hyprland.desktop
 
 # Install and configure oh my zsh / theme / plugins
-
 if [ ! -d "~/.oh-my-zsh" ]
 then
     echo -e "$CNT - Installing and configuration Oh-My-Zsh..."
@@ -235,7 +241,6 @@ do
 done
 
 # These config directories are not in the .config directory
-
 ROOT_DIRECTORIES=(".themes" ".scripts")
 for DIR in ${ROOT_DIRECTORIES[@]};
 do
@@ -269,7 +274,6 @@ ln -sf $PWD/Dotfiles/vscode/settings.json ~/.config/Code/User/settings.json
 ln -sf $PWD/Dotfiles/wallpapers/desktop-background.png ~/.config/wallpapers/desktop-background.png
 ln -sf $PWD/Dotfiles/btop/btop.conf ~/.config/btop/btop.conf
 ln -sf $PWD/Themes/btop/tokyo-storm.theme ~/.config/btop/themes/tokyo-storm.theme
-
 
 
 echo -e "$COK - Installation Complete, Rebooting to Hyprland..."
