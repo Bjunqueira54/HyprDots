@@ -28,11 +28,11 @@ markup=1
 actions=1
 history=1
 text-alignment=center
-default-timeout=5000
+default-timeout=3000
 ignore-timeout=0
-max-visible=5
+max-visible=3
 layer=overlay
-anchor=center
+anchor=top-right
 
 background-color=#1e1e2e
 text-color=#dadef4
