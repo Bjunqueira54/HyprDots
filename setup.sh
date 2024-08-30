@@ -138,6 +138,7 @@ PACKAGES=(
     "protontricks"
     "fuse2"
     "xclicker"
+    "mpvpaper"
 )
 
 clear
