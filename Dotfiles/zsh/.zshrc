@@ -121,6 +121,5 @@ autoload -Uz compinit
 compinit
 
 
-alias reloadbash='source ~/.aliases && source ~/.terraform'
-source ~/.scripts/aliases 
-source ~/.scripts/terraform
+alias reloadbash='source ~/.aliases'
+source ~/.scripts/aliases
