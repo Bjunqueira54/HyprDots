@@ -40,13 +40,20 @@ PACKAGES=(
     "hyprswitch"
 
 # Audio
+    "pipewire"
+    "lib32-pipewire"
+    "pipewire-audio"
+    "pipewire-docs"
+    "pipewire-alsa"
+    "pipewire-pulse"
+    "wireplumber"
+    "qpwgraph"
     "pamixer"
     "pavucontrol"
-    #"easyeffects"
-    #"pipewire"
-    #"lib32-pipewire"
-    #"pipewire-jack"
-    #"lib32-pipewire-jack"
+    "easyeffects"
+    "lsp-plugins-lv2"
+    "pipewire-jack"
+    "lib32-pipewire-jack"
 
 #Networking
     "network-manager-applet"
