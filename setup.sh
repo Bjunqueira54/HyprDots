@@ -150,6 +150,8 @@ PACKAGES=(
     "ntfs-3g"
     "spotify-adblock"
     "wl-clipboard"
+    "flameshot-git"
+    "jdk21-openjdk"
 )
 
 clear
