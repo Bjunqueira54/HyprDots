@@ -45,8 +45,8 @@ window#waybar {
   color: #C4CAED;
   background-color: rgba(29, 29, 44, 1);
   border-radius: 0px 0px 0px 75px;
-  padding-right: 25px;
   padding-left: 25px;
+  padding-right: 10px;
 }
 
 #privacy {
@@ -61,7 +61,7 @@ window#waybar {
   color: #C4CAED;
   background-color: rgba(29, 29, 44, 1);
   border-radius: 0px 0px 0px 0px;
-  padding-left: 15px;
+  padding-left: 0px;
 }
 
 #custom-spotify {
