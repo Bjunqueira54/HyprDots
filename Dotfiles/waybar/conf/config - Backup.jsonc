@@ -11,12 +11,12 @@
     "hyprland/workspaces"
   ],
   "modules-center": [
-    "custom/spotify"
+    "clock"
   ],
   "modules-right": [
     "tray",
     "pulseaudio",
-    "clock"
+    "custom/hyprpicker"
   ],
   // Modules configuration
   "custom/launcher": {
@@ -42,14 +42,9 @@
       "5": "5"
     }
   },
-  "tray": {
-    "spacing": 10,
-    "icon-size": 25,
-    "show-passive-items": true
-  },
   "clock": {
     "interval": 1,
-    "format": "{:%H:%M:%S\n%d/%m/%Y}",
+    "format": "{:%H:%M:%S - %d/%m/%Y}",
     "tooltip": "true",
     "tooltip-format": "<tt><big>{calendar}</big></tt>",
     "calendar": {
@@ -68,6 +63,11 @@
       }
     }
   },
+  "tray": {
+    "spacing": 10,
+    "icon-size": 25,
+    "show-passive-items": false
+  },
   "pulseaudio": {
     "format": "{icon} {volume}%",
     "format-muted": "󰝟",
@@ -83,13 +83,5 @@
     "on-scroll-down": "bash ~/.scripts/volume down",
     "scroll-step": 5,
     "on-click-right": "pavucontrol"
-  },
-  "custom/spotify": {
-    "exec": "/usr/bin/python3 ~/.scripts/mediaplayer.py --player spotify",
-    "format": "{}  ",
-    "return-type": "json",
-    "on-click": "playerctl play-pause",
-    "on-scroll-up": "playerctl next",
-    "on-scroll-down": "playerctl previous"
   }
 }

@@ -285,6 +285,7 @@ ln -sf $PWD/Dotfiles/scripts/aliases ~/.scripts/aliases
 ln -sf $PWD/Dotfiles/scripts/swww ~/.scripts/swww
 ln -sf $PWD/Dotfiles/scripts/mpvpaper ~/.scripts/mpvpaper
 ln -sf $PWD/Dotfiles/scripts/updater ~/.scripts/updater
+ln -sf $PWD/Dotfiles/scripts/mediaplayer.py ~/.scripts/mediaplayer.py
 ln -sf $PWD/Dotfiles/neofetch/config.conf ~/.config/neofetch/config.conf
 ln -sf $PWD/Dotfiles/rtorrent.rc ~/.rtorrent.rc
 ln -sf $PWD/Dotfiles/Thunar/accels.scm ~/.config/Thunar/accels.scm
