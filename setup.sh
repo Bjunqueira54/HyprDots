@@ -129,7 +129,7 @@ PACKAGES=(
     "openrgb"
     "openrazer-driver-dkms"
     "oversteer"
-    "steam"
+    "steam-native-runtime"
     "vesktop"
     "mangohud"
     "goverlay"
