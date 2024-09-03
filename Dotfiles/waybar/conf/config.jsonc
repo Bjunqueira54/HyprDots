@@ -106,7 +106,7 @@
     "on-click-right": "pavucontrol"
   },
   "custom/spotify": {
-    "exec": "/usr/bin/python3 ~/.scripts/mediaplayer.py --player spotify",
+    "exec": "/usr/bin/python3 ~/.scripts/mediaplayer.py",
     "format": "{}  ",
     "return-type": "json",
     "on-click": "playerctl play-pause",
