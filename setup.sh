@@ -29,8 +29,6 @@ PACKAGES=(
     "slurp"
     "thunar"
     "thunar-archive-plugin"
-    #"dolphin"
-    #"dolphin-plugins"
     "polkit-kde-agent"
     "python-requests"
 
@@ -152,6 +150,7 @@ PACKAGES=(
     "wl-clipboard"
     "flameshot-git"
     "jdk21-openjdk"
+    "opentabletdriver-git"
 )
 
 clear
