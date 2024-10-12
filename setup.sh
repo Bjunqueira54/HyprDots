@@ -57,6 +57,7 @@ PACKAGES=(
     "network-manager-applet"
     "networkmanager-openvpn"
     "openssh"
+    "zerotier-one"
 
 # Fonts
     "ttf-jetbrains-mono-nerd"
@@ -197,9 +198,10 @@ do
     install $PKG
 done
 
-# Start the network manager applet service
-echo -e "$CNT - Starting the Network Manager Service..."
+# Start network services
+echo -e "$CNT - Starting the Network Services..."
 sudo systemctl enable --now NetworkManager.service
+sudo systemctl enable --now zerotier-one.service
 
 # Enable the sddm login manager service
 echo -e "$CNT - Enabling the SDDM Service..."
