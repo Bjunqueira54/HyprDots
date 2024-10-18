@@ -152,6 +152,7 @@ PACKAGES=(
     "flameshot-git"
     "jdk21-openjdk"
     "opentabletdriver-git"
+    "lutris"
 )
 
 clear
