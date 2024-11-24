@@ -153,6 +153,7 @@ PACKAGES=(
     "jdk21-openjdk"
     "opentabletdriver-git"
     "lutris"
+    "qalculate-qt"
 )
 
 clear
