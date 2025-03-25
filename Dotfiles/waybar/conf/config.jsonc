@@ -1,6 +1,6 @@
 {
   "position": "top",
-  "layer": "top",
+  "layer": "bottom",
   "height": 40,
   "margin-top": 0,
   "margin-bottom": 0,
@@ -82,7 +82,7 @@
     "on-scroll-up": "bash ~/.scripts/volume --inc",
     "on-scroll-down": "bash ~/.scripts/volume --dec",
     "scroll-step": 5,
-    "on-click-right": "pavucontrol"
+    "on-click-right": "pwvucontrol"
   },
   "custom/spotify": {
     "exec": "/usr/bin/python3 ~/.scripts/mediaplayer.py",
