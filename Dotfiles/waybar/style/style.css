@@ -6,15 +6,15 @@
 }
 
 window#waybar {
-  background: rgba(30, 30, 46, 0.5);
+  background: rgba(36, 39, 58, 0.5);
   border-bottom: 1px solid #282828;
   margin-left: -0px;
-  color: #f4d9e1
+  color: #b7bdf8
 }
 
 #custom-launcher {
-  color: #e5809e;
-  background-color: rgba(29, 29, 44, 1);
+  color: #ed8796;
+  background-color: #24273a;
   border-radius: 0px 0px 0px 0px;
   margin: 0px 0px 0px 0px;
   padding: 0 20px 0 20px;
@@ -22,14 +22,14 @@ window#waybar {
 }
 
 #workspaces {
-  background-color: rgba(29, 29, 44, 1);
+  background-color: #24273a;
   border-radius: 0px 0px 75px 0px;
   padding: 0 20px 0 20px;
 }
 
 #clock {
-  color: #C4CAED;
-  background-color: rgba(29, 29, 44, 1);
+  color: #c6a0f6;
+  background-color: #24273a;
   border-radius: 0px 0px 0px 0px;
   padding-left: 30px;
   padding-right: 30px;
@@ -42,31 +42,31 @@ window#waybar {
 }
 
 #tray {
-  color: #C4CAED;
-  background-color: rgba(29, 29, 44, 1);
+  color: #c6a0f6;
+  background-color: #24273a;
   border-radius: 0px 0px 0px 75px;
   padding-left: 25px;
   padding-right: 10px;
 }
 
 #privacy {
-  color: #C4CAED;
-  background-color: rgba(29, 29, 44, 1);
+  color: #c6a0f6;
+  background-color: #24273a;
   border-radius: 0px 0px 0px 0px;
   padding-right: 15px;
   padding-left: 25px;
 }
 
 #pulseaudio {
-  color: #C4CAED;
-  background-color: rgba(29, 29, 44, 1);
+  color: #c6a0f6;
+  background-color: #24273a;
   border-radius: 0px 0px 0px 0px;
   padding-left: 0px;
 }
 
 #custom-spotify {
-  background-color: rgba(29, 29, 44, 1);
-  color: #C4CAED;
+  background-color: #24273a;
+  color: #c6a0f6;
   min-width: 100px;
   border-radius: 0px 0px 75px 75px;
   padding-right: 25px;
