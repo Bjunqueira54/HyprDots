@@ -1,7 +1,7 @@
 
 # HyprDots
 
-![GitHub last commit](https://img.shields.io/github/last-commit/markpendlebury/HyprDots) ![Static Badge](https://img.shields.io/badge/Prs-Welcome-blue) ![GitHub forks](https://img.shields.io/github/forks/markpendlebury/hyprdots) ![GitHub Repo stars](https://img.shields.io/github/stars/markpendlebury/hyprdots)
+![GitHub last commit](https://img.shields.io/github/last-commit/Bjunqueira54/HyprDots) ![Static Badge](https://img.shields.io/badge/Prs-Welcome-blue) ![GitHub forks](https://img.shields.io/github/forks/Bjunqueira54/hyprdots) ![GitHub Repo stars](https://img.shields.io/github/stars/Bjunqueira54/hyprdots)
 
 
 
@@ -11,9 +11,9 @@ Welcome! My goal with this repository was to provide myself with a development d
 
 # Screenshots
 
-![Empty Desktop Screenshot](https://github.com/markpendlebury/HyprDots/blob/main/Assets/desktop.png)
+![Empty Desktop Screenshot](https://github.com/Bjunqueira54/HyprDots/blob/main/Assets/desktop.png)
 
-![Application Screenshot](https://github.com/markpendlebury/HyprDots/blob/main/Assets/apps.png)
+![Application Screenshot](https://github.com/Bjunqueira54/HyprDots/blob/main/Assets/apps.png)
 
 # Features
 
@@ -29,7 +29,7 @@ Welcome! My goal with this repository was to provide myself with a development d
 I strongly recommend you build this into a clean minimal installation of Arch. During your clean installation of Arch be sure to add git as an additional package, then once installation has complete and you've logged into for the first time, simply clone this repo, cd into it and run `./setup.sh`. Once complete reboot and you'll find yourself at the SDDM Login Screen. 
 
 1. Fork this repository
-2. Install a minimal installation of Arch Linux 
+2. Install a minimal installation of Arch Linux
     a. Be sure to install git as an additional package
 3. After installation completes, clone your forked version of this repo
 4. cd into the directory and run `./setup.sh`
@@ -149,4 +149,4 @@ When using `setup.sh` the following applications will be installed. It's possibl
 | QT5-GraphicalEffects | | |
 
 # Dotfiles
-All dots are located under [Dotfiles/](https://github.com/markpendlebury/HyprDots/tree/main/Dotfiles). I recommend you leave them in this location and rely on the [symlink](https://github.com/markpendlebury/HyprDots/blob/main/setup.sh#L189)  stage of [setup.sh](https://github.com/markpendlebury/HyprDots/blob/main/setup.sh) to link them into the correct locations. You can however move pick and chose which dots you want, if that's the case I'm going to assume you know what you're doing.
+All dots are located under [Dotfiles/](https://github.com/Bjunqueira54/HyprDots/tree/main/Dotfiles). I recommend you leave them in this location and rely on the [symlink](https://github.com/Bjunqueira54/HyprDots/blob/main/setup.sh#L189)  stage of [setup.sh](https://github.com/Bjunqueira54/HyprDots/blob/main/setup.sh) to link them into the correct locations. You can however move pick and chose which dots you want, if that's the case I'm going to assume you know what you're doing.
