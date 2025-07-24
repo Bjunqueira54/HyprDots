@@ -34,5 +34,6 @@
     "workbench.colorTheme": "Tokyo Night Gogh",
     "aws.telemetry": false,
     "telemetry.telemetryLevel": "off",
-    "editor.lightbulb.enabled": "onCode"
+    "editor.lightbulb.enabled": "onCode",
+    "editor.largeFileOptimizations": false
 }
