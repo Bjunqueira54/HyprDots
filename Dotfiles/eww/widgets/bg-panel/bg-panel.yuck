@@ -1,0 +1,83 @@
+(defvar y true)
+
+(defpoll weather :interval "2h" `./widgets/bg-panel/scripts/weather.sh`)
+(defpoll date :interval "1h" `date --utc +'{"date":"%d %B, %Y","day":"%A"}'`)
+
+(defwindow bg-panel
+	:namespace "bg-panel"
+	:monitor 0
+	:stacking "bg"
+	:geometry (geometry
+		:anchor "top left"
+		:x "1%"
+		:y "3%"
+		:width "20%"
+		:height "20%"
+	)
+	(widget)
+)
+
+(defwidget widget []
+	(box
+		:orientation "h"
+		:space-evenly false
+		:halign "start"
+		:spacing 25
+		(box
+			:orientation "v"
+			:space-evenly false
+			:spacing 20
+			(eventbox
+				:height 70
+				:width 70
+				:class "wicon"
+				:cursor "pointer"
+				:onclick "hyprctl dispatch exec vesktop"
+				(label :text "")
+			)
+			(eventbox
+				:height 70
+				:width 70
+				:class "wicon"
+				:cursor "pointer"
+				:onclick "hyprctl dispatch exec firefox"
+				(label :text "")
+			)
+			(eventbox
+				:height 70
+				:width 70
+				:class "wicon"
+				:cursor "pointer"
+				:onclick "hyprctl dispatch exec spotify"
+				(label :text "")
+			)
+			(eventbox
+				:height 70
+				:width 70
+				:class "wicon"
+				:cursor "pointer"
+				:onclick "hyprctl dispatch exec 'code'"
+			(label :text ""))
+		)
+		(box
+			:orientation "v"
+			:space-evenly false
+			:spacing 20
+			(label
+				:class "wdate"
+				:xalign 0
+				:text "${date.date}"
+			)
+			(label
+				:class "wday"
+				:xalign 0
+				:text "${date.day}"
+			)
+			(label
+				:class "welement"
+				:xalign 0
+				:text "${weather}"
+			)
+		)
+	)
+)

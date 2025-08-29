@@ -1,0 +1,37 @@
+.wdate {
+  font-family: Dosis;
+  font-size: 1.35rem;
+  font-weight: bold;
+  color: rgba($border-primary, 0.8);
+  margin-bottom: -15px;
+}
+
+.wday {
+  font-family: Dosis;
+  font-size: 5.25rem;
+  font-weight: bolder;
+  color: rgba($text-accent, 0.7);
+  margin-bottom: 10px;
+}
+
+.welement {
+  font-family: Dosis;
+  font-size: 5.25rem;
+  font-weight: bolder;
+  color: rgba(#a6e3a1, 0.9);
+}
+
+.wicon {
+  border: 2px solid $border-primary;
+  border-radius: 100%;
+  color: rgba($text-accent, 0.9);
+  min-height: 1.3rem;
+  min-width: 1.3rem;
+  padding: 20px;
+  font-size: 1.3rem;
+  background-color: rgba(#857965, 0.3);
+
+  &:hover {
+    background-color: rgba(#857965, 0.2);
+  }
+}

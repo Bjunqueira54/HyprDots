@@ -297,6 +297,8 @@ ln -sf $PWD/Dotfiles/vscode/settings.json ~/.config/Code/User/settings.json
 ln -sf $PWD/Dotfiles/wallpapers/desktop-background.png ~/.config/wallpapers/desktop-background.png
 ln -sf $PWD/Dotfiles/btop/btop.conf ~/.config/btop/btop.conf
 ln -sf $PWD/Themes/btop/tokyo-storm.theme ~/.config/btop/themes/tokyo-storm.theme
+ln -sf $PWD/Dotfiles/end-rs/config.toml ~/.config/end-rs/config.toml
+ln -sf $PWD/Dotfiles/eww ~/.config/eww
 
 
 echo -e "$COK - Installation Complete, Rebooting to Hyprland..."

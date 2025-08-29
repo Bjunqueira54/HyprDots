@@ -1,5 +1,5 @@
 {
-    "workbench.iconTheme": "vscode-icons",
+    "workbench.iconTheme": "catppuccin-mocha",
     "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
     "editor.fontFamily": "JetBrainsMono Nerd Font",
     "editor.fontSize": 12,
@@ -31,9 +31,9 @@
     "gitlens.graph.layout": "editor",
     "C_Cpp.codeFolding": "disabled",
     "C_Cpp.formatting": "disabled",
-    "workbench.colorTheme": "Tokyo Night Gogh",
     "aws.telemetry": false,
     "telemetry.telemetryLevel": "off",
     "editor.lightbulb.enabled": "onCode",
-    "editor.largeFileOptimizations": false
+    "editor.largeFileOptimizations": false,
+    "workbench.colorTheme": "Catppuccin Mocha"
 }
