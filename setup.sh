@@ -47,7 +47,7 @@ PACKAGES=(
     "wireplumber"
     "qpwgraph"
     "pamixer"
-    "pavucontrol"
+    "pwvucontrol"
     "easyeffects"
     "lsp-plugins-lv2"
     "pipewire-jack"
