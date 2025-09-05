@@ -1,17 +1,16 @@
 (defwindow toggle-cpu-profile
   :namespace "toggle-cpu-profile"
-  :monitor   0
   :stacking  "overlay"
   :geometry  (geometry
-               :anchor "top right"
-               :width  "30%"
-               :height "170px"
-               :x      250
-             )
+    :anchor "top right"
+    :width  "30%"
+    :height "170px"
+    :x      250
+  )
   (box
     :space-evenly false
     :halign       "end"
-	:valign 	  "start"
+    :valign 	  "start"
     (revealer
       :transition "slideup"
       :reveal     tgcrev
@@ -25,35 +24,35 @@
 
 (defwidget toggle-cpu-profile []
   (eventbox
-	:onhoverlost "./bar/popup-menus/scripts/toggle-cpu-profile.sh"
+    :onhoverlost "./bar/popup-menus/scripts/toggle-cpu-profile.sh"
     (box
       :class        "parent"
       :space-evenly false
       :orientation  "v"
-
+      
       ;; Header section
       (box
         :class        "header"
         :space-evenly false
-
+        
         (label
           :class "title"
           :text  "     Performance Mode"
         )
-
+        
         (button
           :class   "exit"
           :onclick "./bar/popup-menus/scripts/toggle-cpu-profile.sh"
           (label :text " ")
         )
       )
-
+      
       ;; Body section: Profiles list
       (box
         :class        "body"
         :space-evenly false
         :orientation  "v"
-
+        
         ;; Auto profile
         (eventbox
           :cursor "pointer"
@@ -69,7 +68,7 @@
             )
           )
         )
-
+        
         ;; Powersave profile
         (eventbox
           :cursor "pointer"
@@ -80,7 +79,7 @@
             (label :text "   Powersave")
           )
         )
-
+        
         ;; Performance profile
         (eventbox
           :cursor "pointer"

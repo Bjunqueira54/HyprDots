@@ -12,7 +12,6 @@
 
 (defwindow calender
   :namespace "calender"
-  :monitor 0
   :stacking "fg"
   :geometry (geometry
     :anchor "top right"
@@ -33,7 +32,7 @@
 
 (defwidget calender []
   (eventbox
-	:onhoverlost "./bar/popup-menus/scripts/toggle-cal.sh"
+    :onhoverlost "./bar/popup-menus/scripts/toggle-cal.sh"
     (box
       :class        "cal-container"
       :space-evenly  false
@@ -56,7 +55,7 @@
           )
         )
       )
-
+      
       (box
         :class "calendar-box"
         :halign "center"

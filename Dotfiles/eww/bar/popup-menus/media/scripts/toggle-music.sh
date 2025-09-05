@@ -1,16 +1,9 @@
 #!/bin/bash
 
-SCREEN=0
-read CX CY <<< "$(hyprctl cursorpos | sed 's/,/ /')"
-
-if [[ $CX -lt 0 ]]; then
-	SCREEN=1
-elif [[ $CX -gt 1920 ]]; then
-	SCREEN=2
-fi
+echo $PWD > ~/eww.log
 
 if [[ -z $(eww active-windows | grep 'media') ]]; then
-	eww open media --screen $SCREEN && eww update mediarev=true
+	eww open media --screen $(./bar/popup-menus/scripts/get-monitor.sh) && eww update mediarev=true
 else
 	eww update mediarev=false
 	(sleep 0.2 && eww close media) &
