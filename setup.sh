@@ -16,26 +16,8 @@ PACKAGES=(
     "qt6-wayland"
     "qt5ct"
     "kitty"
-    "waybar"
     "jq"
-    "mako"
-    "swww"
-    "sway"
-    "swaylock-effects"
-    "swayidle"
-    "wofi"
-    "swappy"
-    "grim"
-    "slurp"
-    "thunar"
-    "thunar-archive-plugin"
-    "polkit-kde-agent"
     "python-requests"
-
-# HyprLand
-    "hyprland"
-    "xdg-desktop-portal-hyprland"
-    "hyprswitch"
 
 # Audio
     "pipewire"
@@ -47,11 +29,29 @@ PACKAGES=(
     "wireplumber"
     "qpwgraph"
     "pamixer"
-    "pavucontrol"
+    "pwvucontrol"
     "easyeffects"
     "lsp-plugins-lv2"
     "pipewire-jack"
     "lib32-pipewire-jack"
+
+# HyprLand
+    "eww"
+    "mako"
+    "swww"
+    "sway"
+    "swaylock-effects"
+    "swayidle"
+    "vicinae-bin"
+    "swappy"
+    "grim"
+    "slurp"
+    "thunar"
+    "thunar-archive-plugin"
+    "polkit-kde-agent"
+    "hyprland"
+    "xdg-desktop-portal-hyprland"
+    "hyprswitch"
 
 #Networking
     "network-manager-applet"
@@ -123,7 +123,6 @@ PACKAGES=(
     "btop"
     "pacman-contrib"
     "obs-studio"
-    "manga-tui"
     "wine-staging"
     "openrgb"
     "openrazer-driver-dkms"
@@ -153,7 +152,6 @@ PACKAGES=(
     "jdk21-openjdk"
     "opentabletdriver-git"
     "lutris"
-    "qalculate-qt"
 )
 
 clear

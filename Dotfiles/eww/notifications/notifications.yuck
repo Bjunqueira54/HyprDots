@@ -1,6 +1,6 @@
 ;; Notifications
 (defvar notifhisrev false)
-(defvar end-binary "./bin/end-rs") 
+(defvar end-binary "./bin/end-rs")
 (defvar end-notifications '')
 (defvar end-histories '')
 (defvar end-replies '')
@@ -8,22 +8,19 @@
 
 (defwindow notification-frame
   :monitor 0
-  :geometry (geometry 
+  :geometry (geometry
     :x "0px"
     :y "0px"
     :width "480px"
     :height "0px" :anchor "top right"
   )
   :stacking "overlay"
-  (literal
-    :content end-notifications
-  )
+  (literal :content end-notifications)
 )
 
 (defwindow history-frame
-  :monitor 0
   :class "end-history-frame"
-  :geometry (geometry 
+  :geometry (geometry
     :x "0.5%"
     :y "0.5%"
     :width "30px"
@@ -40,9 +37,7 @@
         (scroll
           :hscroll false
           :vscroll true
-          (literal
-            :content end-histories
-          )
+          (literal :content end-histories)
         )
       )
     )
@@ -51,7 +46,7 @@
 
 (defwindow reply-frame
   :monitor 0
-  :geometry (geometry 
+  :geometry (geometry
     :x "0px"
     :y "0px"
     :width "480px"
@@ -107,7 +102,7 @@
           :valign "start"
           :orientation "vertical"
           :space-evenly "false"
-          (label 
+          (label
             :class "notification-text notification-title"
             :valign "start"
             :yalign 0
@@ -159,7 +154,7 @@
         (image
           :path {history.app_icon}  ; end sets this property if the notification contains an image
           :class "end-default-notification-appicon"
-	        :visible {history.app_icon != "" ? true : false}
+          :visible {history.app_icon != "" ? true : false}
           :image-width 15
           :image-height 15
         )
@@ -185,7 +180,7 @@
           :class "content-box"
           :orientation "vertical"
           :space-evenly false
-          (label 
+          (label
             :class "notification-text notification-title"
             :yalign 1
             :xalign 0

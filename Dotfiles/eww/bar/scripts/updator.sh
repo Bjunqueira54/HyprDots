@@ -3,7 +3,7 @@
 AUR_HELPER="yay"
 UPDATES_DIR="/tmp/updates"
 ICON="󰮯"
-INTERVAL_MINUTES=10
+INTERVAL_MINUTES=1
 
 # Exit early on snapshot boots
 if grep -q 'subvol=@/.snapshots' /proc/cmdline; then
