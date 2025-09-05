@@ -21,9 +21,7 @@
     (revealer :transition "slideright"
       :reveal dashrev
       :duration "350ms"
-      (usrctl-widget
-        :uptime get_uptime
-      )
+      (usrctl-widget :uptime get_uptime)
     )
   )
 )
@@ -52,9 +50,7 @@
               :space-evenly false
               :valign "start"
               :halign "start"
-              (box
-                :class "pfp"
-              )
+              (box :class "pfp")
               (box
                 :class "pfp-text"
                 :orientation "v"
@@ -62,9 +58,7 @@
                 (box
                   :class "username"
                   :space-evenly false
-                  (label
-                    :text "Welcome, GothiDread"
-                  )
+                  (label :text "Welcome, GothiDread")
                 )
                 (box
                   :class "uptime"

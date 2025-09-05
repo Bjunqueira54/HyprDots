@@ -1,11 +1,8 @@
 #!/usr/bin/env sh
 
-eww update notifhisrev=$(
-	if [ "$(eww get notifhisrev)" = "true" ]; then
-		echo false
-		eww open history-frame
-	else
-		echo true
-		eww close history-frame
-	fi
-)
+if [[ -z $(eww active-windows | grep 'history-frame') ]]; then
+	eww open history-frame --screen $(./bar/popup-menus/scripts/get-monitor.sh) && eww update notifhisrev=true
+else
+	eww update notifhisrev=false
+	(sleep 0.5 && eww close history-frame) &
+fi

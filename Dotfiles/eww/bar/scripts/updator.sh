@@ -27,15 +27,15 @@ check_and_write_updates() {
   echo "$aur" > "$UPDATES_DIR/aur"
 
   # Flatpak
-  if command -v flatpak >/dev/null 2>&1; then
-    flatpak remote-ls --updates 2>/dev/null \
-      | tee "$UPDATES_DIR/flatpak_list" >/dev/null
-    fpk=$(wc -l < "$UPDATES_DIR/flatpak_list")
-  else
-    fpk=0
-    : > "$UPDATES_DIR/flatpak_list"
-  fi
-  echo "$fpk" > "$UPDATES_DIR/flatpak"
+  # if command -v flatpak >/dev/null 2>&1; then
+  #   flatpak remote-ls --updates 2>/dev/null \
+  #     | tee "$UPDATES_DIR/flatpak_list" >/dev/null
+  #   fpk=$(wc -l < "$UPDATES_DIR/flatpak_list")
+  # else
+  #   fpk=0
+  #   : > "$UPDATES_DIR/flatpak_list"
+  # fi
+  # echo "$fpk" > "$UPDATES_DIR/flatpak"
 }
 
 boldify_ascii() {
@@ -49,8 +49,8 @@ boldify_ascii() {
 generate_json_output() {
   ofc=$(< "$UPDATES_DIR/official")
   aur=$(< "$UPDATES_DIR/aur")
-  fpk=$(< "$UPDATES_DIR/flatpak")
-  total=$((ofc + aur + fpk))
+  #fpk=$(< "$UPDATES_DIR/flatpak")
+  total=$((ofc + aur))
 
   if (( total == 0 )); then
     echo ""
