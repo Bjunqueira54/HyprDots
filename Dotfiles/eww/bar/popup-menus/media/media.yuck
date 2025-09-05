@@ -2,7 +2,6 @@
 
 (defwindow media
   :namespace	"media"
-  :monitor      0
   :stacking     "fg"
   :geometry (geometry
     :anchor "top center"
@@ -11,7 +10,7 @@
   )
   (box
     :space-evenly false
-	  :valign "start"
+    :valign "start"
     (revealer
       :transition "slideup"
       :reveal     mediarev
@@ -29,38 +28,38 @@
 
 (defwidget music-player []
   (eventbox
-	:onhoverlost "./bar/popup-menus/media/scripts/toggle-music.sh"
-	(box
+    :onhoverlost "./bar/popup-menus/media/scripts/toggle-music.sh"
+    (box
       :class "container"
       :space-evenly false
       :orientation "v"
-
+      
       ;; Thumbnail and descriptions
       (box
         :class        "title"
         :orientation   "h"
         :space-evenly  false
-
+        
         (box
           :class "music-thumbnail"
           :style "background-image: url('${music.artUrl}');"
         )
-
+        
         (box
           :class "music-desc"
           :orientation "v"
           :space-evenly false
-
+          
           (label
             :class "main-title"
             :limit-width 20
             :lines 2
             :height 80
             :justify "center"
-	          :xalign	 0.5
+            :xalign	 0.5
             :text "${music.title}"
           )
-
+          
           (label
             :class "artist"
             :justify "center"
@@ -69,7 +68,7 @@
           )
         )
       )
-
+      
       ;; Progress slider
       (scale
         :class "music-slider"
@@ -78,7 +77,7 @@
         :value {music.position}
         :onchange "playerctl position {}"
       )
-
+      
       ;; Timer labels
       (box
         :class "music-timer"
@@ -91,7 +90,7 @@
           :text "${music.lengthStr}"
         )
       )
-
+      
       ;; Playback controls
       (box
         :class "music-action"
@@ -99,21 +98,21 @@
         :space-evenly false
         :halign "center"
         :spacing 45
-
+        
         (eventbox
           :class "mico"
           :cursor "pointer"
           :onclick "playerctl previous"
           "󰒮"
         )
-
+        
         (eventbox
           :class "mico"
           :cursor "pointer"
           :onclick "playerctl play-pause"
           {music.status == "Playing" ? "󰏤" : "󰐊"}
         )
-
+        
         (eventbox
           :class "mico"
           :cursor "pointer"

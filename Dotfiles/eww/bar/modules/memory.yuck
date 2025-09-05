@@ -9,7 +9,7 @@
     (label
       :class "mem-t"
       :text "${system.meminfo}"
-      :tooltip "CPU usage"
+      :tooltip "RAM usage"
     )
   )
 )
